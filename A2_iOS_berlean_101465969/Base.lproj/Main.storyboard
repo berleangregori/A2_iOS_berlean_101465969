@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="35.877862595419849" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Product-->
         <scene sceneID="N8T-M4-ekh">
             <objects>
-                <viewController id="uTm-C1-1nm" sceneMemberID="viewController">
+                <viewController title="Add Product" id="uTm-C1-1nm" customClass="AddProductViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AqE-tE-kaT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
