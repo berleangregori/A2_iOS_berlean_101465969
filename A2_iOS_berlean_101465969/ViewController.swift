@@ -59,7 +59,9 @@ class ViewController: UIViewController {
     @IBAction func prevTapped(_ sender: Any) {
     }
     
-    @IBAction func nextTapped(_ sender: Any) {
+    @IBAction func nextTapped(_ sender: UIButton) {
+        currentIndex = (currentIndex + 1) % products.count
+        showCurrentProduct()
     }
     
     @IBAction func searchTapped(_ sender: Any) {
