@@ -87,6 +87,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Add Product"/>
                                 <connections>
                                     <action selector="addTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h38-3X-Kbt"/>
+                                    <segue destination="uTm-C1-1nm" kind="show" identifier="toAddProduct" id="aVr-MT-D5O"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3C-LG-XRc">
@@ -119,7 +120,7 @@
             <objects>
                 <viewController title="Add Product" id="uTm-C1-1nm" customClass="AddProductViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AqE-tE-kaT">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Product ID" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GxI-xb-BjA">
@@ -172,6 +173,7 @@
                         <viewLayoutGuide key="safeArea" id="2HB-lN-Ccx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="XsM-rh-ZFx"/>
                     <connections>
                         <outlet property="descTextField" destination="GWD-Vx-ePU" id="Kdn-l9-qrp"/>
                         <outlet property="idTextField" destination="GxI-xb-BjA" id="PEz-SW-bjF"/>
@@ -183,6 +185,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ciY-bR-Akm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="670.99236641221376" y="3.5211267605633805"/>
+        </scene>
+        <!--Product List View Controller-->
+        <scene sceneID="k6a-Ie-ebE">
+            <objects>
+                <viewController id="a7e-dX-PLW" customClass="ProductListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6PG-fJ-P7N">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rQX-3Y-Oel"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KEq-ag-m5X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308" y="4"/>
         </scene>
     </scenes>
     <resources>
