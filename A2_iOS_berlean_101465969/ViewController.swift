@@ -24,6 +24,21 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func prevTapped(_ sender: Any) {
+    }
+    
+    @IBAction func nextTapped(_ sender: Any) {
+    }
+    
+    @IBAction func searchTapped(_ sender: Any) {
+    }
+    
+    @IBAction func addTapped(_ sender: Any) {
+    }
+    
+    @IBAction func listTapped(_ sender: Any) {
+    }
+    
+    
 }
 

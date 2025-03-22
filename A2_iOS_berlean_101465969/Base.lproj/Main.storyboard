@@ -51,12 +51,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Previous"/>
+                                <connections>
+                                    <action selector="prevTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qiy-cm-c4c"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gde-02-3lN">
                                 <rect key="frame" x="271" y="748" width="60" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <action selector="nextTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qNi-1S-Afe"/>
+                                    <action selector="prevTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P9u-bi-4oG"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JcS-mC-I23" userLabel="Search input">
                                 <rect key="frame" x="73" y="109" width="150" height="34"/>
@@ -69,18 +76,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Search"/>
+                                <connections>
+                                    <action selector="searchTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t5f-SH-6JQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="gA3-uf-HNX">
                                 <rect key="frame" x="137" y="535" width="120" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add Product"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h38-3X-Kbt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3C-LG-XRc">
                                 <rect key="frame" x="140" y="588" width="116" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Product List"/>
+                                <connections>
+                                    <action selector="listTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rWz-tq-wZA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
