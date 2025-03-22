@@ -17,7 +17,7 @@ class ProductListViewController : UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        self.title = "Product  List"
+        self.title = "Products List"
         
         products = CoreDataManager.shared.fetchProducts()
     }
