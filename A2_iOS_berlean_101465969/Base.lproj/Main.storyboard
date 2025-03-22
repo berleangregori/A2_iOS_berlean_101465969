@@ -157,6 +157,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save Product"/>
+                                <connections>
+                                    <action selector="saveTapped:" destination="uTm-C1-1nm" eventType="touchUpInside" id="WtX-4U-Nw5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvi-QN-gRV">
                                 <rect key="frame" x="149" y="105" width="96" height="21"/>
@@ -169,6 +172,13 @@
                         <viewLayoutGuide key="safeArea" id="2HB-lN-Ccx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="descTextField" destination="GWD-Vx-ePU" id="Kdn-l9-qrp"/>
+                        <outlet property="idTextField" destination="GxI-xb-BjA" id="PEz-SW-bjF"/>
+                        <outlet property="nameTextField" destination="jag-AL-Ybg" id="kNK-QV-dCA"/>
+                        <outlet property="priceTextField" destination="mbW-k9-KDQ" id="7ED-gM-jYv"/>
+                        <outlet property="providerTextField" destination="m4o-mS-nHV" id="H1Q-Mg-vmC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ciY-bR-Akm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
