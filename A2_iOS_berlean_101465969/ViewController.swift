@@ -34,6 +34,15 @@ class ViewController: UIViewController {
                 // Display first product
         showCurrentProduct()
     }
+    
+    func showCurrentProduct() {
+          guard products.indices.contains(currentIndex) else { return }
+          let product = products[currentIndex]
+          nameLabel.text = product.name
+          descLabel.text = product.desc
+          priceLabel.text = "$\(product.price)"
+          providerLabel.text = product.provider
+      }
 
     @IBAction func prevTapped(_ sender: Any) {
     }
