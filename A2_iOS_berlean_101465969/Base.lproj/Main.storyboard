@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Dq-O6-dSS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="A2_iOS_berlean_101465969" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RZ-tA-3NQ">
@@ -53,7 +53,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                 <connections>
                                     <action selector="nextTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qNi-1S-Afe"/>
-                                    <action selector="prevTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P9u-bi-4oG"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JcS-mC-I23" userLabel="Search input">
@@ -77,8 +76,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add Product"/>
                                 <connections>
-                                    <action selector="addTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h38-3X-Kbt"/>
-                                    <segue destination="uTm-C1-1nm" kind="show" id="YYL-fw-RpP"/>
+                                    <action selector="addTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XAx-dw-kv5"/>
+                                    <segue destination="uTm-C1-1nm" kind="show" id="OCc-1U-Y1O"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3C-LG-XRc">
@@ -88,7 +87,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Product List"/>
                                 <connections>
                                     <action selector="listTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rWz-tq-wZA"/>
-                                    <segue destination="a7e-dX-PLW" kind="show" id="Tgv-xz-yp1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qd5-LC-dKO">
@@ -113,14 +111,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="962.59541984732823" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1823.6641221374045" y="103.52112676056339"/>
         </scene>
         <!--Add Product-->
         <scene sceneID="N8T-M4-ekh">
             <objects>
                 <viewController storyboardIdentifier="AddProductViewController" title="Add Product" id="uTm-C1-1nm" customClass="AddProductViewController" customModule="A2_iOS_berlean_101465969" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AqE-tE-kaT">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Product Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jag-AL-Ybg">
@@ -154,16 +152,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Save Product"/>
                                 <connections>
                                     <action selector="saveTapped:" destination="uTm-C1-1nm" eventType="touchUpInside" id="W8s-os-v7n"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Mcr-ea-4cO"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="2Cp-NH-vAK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvi-QN-gRV">
-                                <rect key="frame" x="149" y="105" width="96" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2HB-lN-Ccx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -178,14 +169,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ciY-bR-Akm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1597.709923664122" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="2604" y="-512"/>
         </scene>
         <!--Product List View Controller-->
         <scene sceneID="k6a-Ie-ebE">
             <objects>
                 <viewController id="a7e-dX-PLW" customClass="ProductListViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6PG-fJ-P7N">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="ProductCell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="heB-1D-iXO">
@@ -197,13 +188,6 @@
                                     <outlet property="delegate" destination="a7e-dX-PLW" id="CTd-Sv-fNK"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFn-38-qYp">
-                                <rect key="frame" x="150" y="111" width="92" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rQX-3Y-Oel"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -215,30 +199,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KEq-ag-m5X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2234.3511450381679" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="2999" y="507"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="0KQ-Oe-nVg">
+        <scene sceneID="HhU-Mh-hdS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Dq-O6-dSS" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ekA-zn-867" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wBU-qD-ark">
+                    <navigationItem key="navigationItem" id="MI5-rj-ztU"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wbm-Gn-l2J">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="liB-j4-SH7"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IbG-Lo-Zde"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i2d-uL-WWK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nRt-vU-XIX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35.877862595419849" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="896.94656488549617" y="103.52112676056339"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YYL-fw-RpP"/>
-        <segue reference="Mcr-ea-4cO"/>
+        <segue reference="IbG-Lo-Zde"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

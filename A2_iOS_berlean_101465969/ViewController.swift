@@ -74,9 +74,27 @@ class ViewController: UIViewController {
                 currentIndex = index
                 showCurrentProduct()
             }
-        }
+    }
     }
     
+    @IBAction func addTapped(_ sender: Any) {
+    }
+    
+    @IBAction func listTapped(_ sender: Any) {
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        // Refresh product list
+        products = CoreDataManager.shared.fetchProducts()
+
+        if !products.isEmpty {
+            currentIndex = products.count - 0
+            showCurrentProduct()
+        }
+    }
+
     
 }
 
