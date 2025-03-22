@@ -17,11 +17,22 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var searchTextField: UITextField!
     
-    
+    var products: [Product] = []
+    var currentIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Fetch products from Core Data
+        products = CoreDataManager.shared.fetchProducts()
+                
+                // If empty, seed with default products
+        if products.isEmpty {
+            seedSampleProducts()
+            products = CoreDataManager.shared.fetchProducts()
+        }
+                
+                // Display first product
+        showCurrentProduct()
     }
 
     @IBAction func prevTapped(_ sender: Any) {
