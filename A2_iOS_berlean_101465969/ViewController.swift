@@ -67,6 +67,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func searchTapped(_ sender: Any) {
+        guard let keyword = searchTextField.text, !keyword.isEmpty else { return }
+        let results = CoreDataManager.shared.searchProducts(keyword: keyword)
+        if let firstMatch = results.first {
+            if let index = products.firstIndex(of: firstMatch) {
+                currentIndex = index
+                showCurrentProduct()
+            }
+        }
     }
     
     @IBAction func addTapped(_ sender: Any) {
