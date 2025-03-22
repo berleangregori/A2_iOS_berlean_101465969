@@ -77,12 +77,6 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func addTapped(_ sender: Any) {
-    }
-    
-    @IBAction func listTapped(_ sender: Any) {
-    }
-    
     
 }
 

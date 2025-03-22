@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Dq-O6-dSS">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -13,34 +13,25 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="A2_iOS_berlean_101465969" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qd5-LC-dKO">
-                                <rect key="frame" x="72" y="195" width="45" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="PsL-xS-WtQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RZ-tA-3NQ">
-                                <rect key="frame" x="73" y="230" width="88" height="21"/>
+                                <rect key="frame" x="73" y="230" width="235" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhU-uM-E3K">
-                                <rect key="frame" x="75" y="259" width="39" height="21"/>
+                                <rect key="frame" x="75" y="259" width="233" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Provider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1X-mX-3jb">
-                                <rect key="frame" x="73" y="288" width="64" height="21"/>
+                                <rect key="frame" x="73" y="288" width="235" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -87,7 +78,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Add Product"/>
                                 <connections>
                                     <action selector="addTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h38-3X-Kbt"/>
-                                    <segue destination="uTm-C1-1nm" kind="show" identifier="toAddProduct" id="aVr-MT-D5O"/>
+                                    <segue destination="uTm-C1-1nm" kind="show" id="YYL-fw-RpP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3C-LG-XRc">
@@ -100,10 +91,18 @@
                                     <segue destination="a7e-dX-PLW" kind="show" id="Tgv-xz-yp1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qd5-LC-dKO">
+                                <rect key="frame" x="73" y="200" width="236" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GPb-3C-HAd"/>
                     <connections>
                         <outlet property="descLabel" destination="0RZ-tA-3NQ" id="D6c-CL-Zbb"/>
                         <outlet property="nameLabel" destination="qd5-LC-dKO" id="ulm-aM-Bms"/>
@@ -114,22 +113,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35.877862595419849" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="962.59541984732823" y="3.5211267605633805"/>
         </scene>
         <!--Add Product-->
         <scene sceneID="N8T-M4-ekh">
             <objects>
-                <viewController title="Add Product" id="uTm-C1-1nm" customClass="AddProductViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddProductViewController" title="Add Product" id="uTm-C1-1nm" customClass="AddProductViewController" customModule="A2_iOS_berlean_101465969" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AqE-tE-kaT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Product ID" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GxI-xb-BjA">
-                                <rect key="frame" x="71" y="176" width="121" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Product Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jag-AL-Ybg">
                                 <rect key="frame" x="71" y="218" width="121" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -160,7 +153,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save Product"/>
                                 <connections>
-                                    <action selector="saveTapped:" destination="uTm-C1-1nm" eventType="touchUpInside" id="WtX-4U-Nw5"/>
+                                    <action selector="saveTapped:" destination="uTm-C1-1nm" eventType="touchUpInside" id="W8s-os-v7n"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Mcr-ea-4cO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvi-QN-gRV">
@@ -176,16 +170,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="XsM-rh-ZFx"/>
                     <connections>
-                        <outlet property="descTextField" destination="GWD-Vx-ePU" id="Kdn-l9-qrp"/>
-                        <outlet property="idTextField" destination="GxI-xb-BjA" id="PEz-SW-bjF"/>
-                        <outlet property="nameTextField" destination="jag-AL-Ybg" id="kNK-QV-dCA"/>
-                        <outlet property="priceTextField" destination="mbW-k9-KDQ" id="7ED-gM-jYv"/>
-                        <outlet property="providerTextField" destination="m4o-mS-nHV" id="H1Q-Mg-vmC"/>
+                        <outlet property="descTextField" destination="GWD-Vx-ePU" id="WjL-1y-lxr"/>
+                        <outlet property="nameTextField" destination="jag-AL-Ybg" id="yTf-aK-qC3"/>
+                        <outlet property="priceTextField" destination="mbW-k9-KDQ" id="sij-Qr-VXZ"/>
+                        <outlet property="providerTextField" destination="m4o-mS-nHV" id="psW-9z-y5w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ciY-bR-Akm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670.99236641221376" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1597.709923664122" y="3.5211267605633805"/>
         </scene>
         <!--Product List View Controller-->
         <scene sceneID="k6a-Ie-ebE">
@@ -222,9 +215,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KEq-ag-m5X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1307.6335877862596" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="2234.3511450381679" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0KQ-Oe-nVg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Dq-O6-dSS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wBU-qD-ark">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="liB-j4-SH7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i2d-uL-WWK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="YYL-fw-RpP"/>
+        <segue reference="Mcr-ea-4cO"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
