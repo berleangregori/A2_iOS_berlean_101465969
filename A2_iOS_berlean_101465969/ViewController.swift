@@ -36,13 +36,25 @@ class ViewController: UIViewController {
     }
     
     func showCurrentProduct() {
-          guard products.indices.contains(currentIndex) else { return }
-          let product = products[currentIndex]
-          nameLabel.text = product.name
-          descLabel.text = product.desc
-          priceLabel.text = "$\(product.price)"
-          providerLabel.text = product.provider
-      }
+        guard products.indices.contains(currentIndex) else { return }
+        let product = products[currentIndex]
+        nameLabel.text = product.name
+        descLabel.text = product.desc
+        priceLabel.text = "$\(product.price)"
+        providerLabel.text = product.provider
+    }
+    
+    func seedSampleProducts() {
+        for i in 1...10 {
+            CoreDataManager.shared.addProduct(
+                id: UUID().uuidString,
+                name: "Product \(i)",
+                desc: "This is a description for product \(i).",
+                price: Double(i) * 5.0,
+                provider: "Provider \(i)"
+            )
+        }
+    }
 
     @IBAction func prevTapped(_ sender: Any) {
     }
